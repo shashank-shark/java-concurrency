@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23359487-774f-4697-bf25-e9a5b24c6d4f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test4/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test5/CleanerTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test5/Event.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test5/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test5/WriterTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/DataSourceLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/NetworkConnectionsLoader.java" afterDir="false" />
+    <list default="true" id="23359487-774f-4697-bf25-e9a5b24c6d4f" name="Default Changelist" comment="test4 - loading resources.&#10;test5 - daemon thread.">
+      <change afterPath="$PROJECT_DIR$/src/parking/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parking/ParkingCash.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parking/ParkingStats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parking/Sensor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test6/SafeTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +28,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -44,7 +40,7 @@
       <recent name="$PROJECT_DIR$/data1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (4)">
+  <component name="RunManager" selected="Application.Main (5)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test2.Main" />
       <module name="java-concurrency" />
@@ -97,12 +93,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test1.Main" />
+    <configuration name="Main (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="parking.Main" />
       <module name="java-concurrency" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test1.*" />
+          <option name="PATTERN" value="parking.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,11 +108,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (5)" />
         <item itemvalue="Application.Main (4)" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -152,51 +148,71 @@
       <option name="project" value="LOCAL" />
       <updated>1586079202821</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="test4 - loading resources.&#10;test5 - daemon thread.">
+      <created>1586093445963</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1586093445963</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test1 - array of threads." />
     <MESSAGE value="test2 - thread interrupts." />
     <MESSAGE value="test3 - file search." />
-    <option name="LAST_COMMIT_MESSAGE" value="test3 - file search." />
+    <MESSAGE value="test4 - loading resources.&#10;test5 - daemon thread." />
+    <option name="LAST_COMMIT_MESSAGE" value="test4 - loading resources.&#10;test5 - daemon thread." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="484" y="53" key="#com.intellij.ide.util.MemberChooser" timestamp="1586090693133">
+    <state x="483" y="28" key="#com.intellij.ide.util.MemberChooser" timestamp="1587267483667">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state x="484" y="53" key="#com.intellij.ide.util.MemberChooser/0.28.1366.740@0.28.1366.740" timestamp="1586090693133" />
-    <state x="243" y="28" key="CommitChangelistDialog2" timestamp="1586093404712">
+    <state x="483" y="28" key="#com.intellij.ide.util.MemberChooser/0.28.1366.740@0.28.1366.740" timestamp="1587267483667" />
+    <state x="408" y="220" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1587273473959">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state x="243" y="28" key="CommitChangelistDialog2/0.28.1366.740@0.28.1366.740" timestamp="1586093404712" />
-    <state width="1318" height="348" key="GridCell.Tab.0.bottom" timestamp="1586093230489">
+    <state x="408" y="220" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.28.1366.740@0.28.1366.740" timestamp="1587273473959" />
+    <state x="240" y="28" key="CommitChangelistDialog2" timestamp="1586099293304">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1318" height="348" key="GridCell.Tab.0.bottom/0.28.1366.740@0.28.1366.740" timestamp="1586093230489" />
-    <state width="1318" height="348" key="GridCell.Tab.0.center" timestamp="1586093230487">
+    <state x="240" y="28" key="CommitChangelistDialog2/0.28.1366.740@0.28.1366.740" timestamp="1586099293304" />
+    <state width="1318" height="348" key="GridCell.Tab.0.bottom" timestamp="1587273637279">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1318" height="348" key="GridCell.Tab.0.center/0.28.1366.740@0.28.1366.740" timestamp="1586093230487" />
-    <state width="1318" height="348" key="GridCell.Tab.0.left" timestamp="1586093230486">
+    <state width="1318" height="348" key="GridCell.Tab.0.bottom/0.28.1366.740@0.28.1366.740" timestamp="1587273637279" />
+    <state width="1318" height="348" key="GridCell.Tab.0.center" timestamp="1587273637278">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1318" height="348" key="GridCell.Tab.0.left/0.28.1366.740@0.28.1366.740" timestamp="1586093230486" />
-    <state width="1318" height="348" key="GridCell.Tab.0.right" timestamp="1586093230487">
+    <state width="1318" height="348" key="GridCell.Tab.0.center/0.28.1366.740@0.28.1366.740" timestamp="1587273637278" />
+    <state width="1318" height="348" key="GridCell.Tab.0.left" timestamp="1587273637277">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1318" height="348" key="GridCell.Tab.0.right/0.28.1366.740@0.28.1366.740" timestamp="1586093230487" />
+    <state width="1318" height="348" key="GridCell.Tab.0.left/0.28.1366.740@0.28.1366.740" timestamp="1587273637277" />
+    <state width="1318" height="348" key="GridCell.Tab.0.right" timestamp="1587273637279">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state width="1318" height="348" key="GridCell.Tab.0.right/0.28.1366.740@0.28.1366.740" timestamp="1587273637279" />
+    <state x="218" y="102" key="IDE.errors.dialog" timestamp="1587265333286">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state x="218" y="102" key="IDE.errors.dialog/0.28.1366.740@0.28.1366.740" timestamp="1587265333286" />
     <state x="281" y="102" key="Vcs.Push.Dialog.v2" timestamp="1586079232183">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="281" y="102" key="Vcs.Push.Dialog.v2/0.28.1366.740@0.28.1366.740" timestamp="1586079232183" />
+    <state x="292" y="226" key="com.intellij.ide.util.TipDialog" timestamp="1586606501241">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state x="292" y="226" key="com.intellij.ide.util.TipDialog/0.28.1366.740@0.28.1366.740" timestamp="1586606501241" />
     <state x="347" y="176" key="run.anything.popup" timestamp="1586088714018">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="347" y="176" key="run.anything.popup/0.28.1366.740@0.28.1366.740" timestamp="1586088714018" />
-    <state x="322" y="89" width="719" height="678" key="search.everywhere.popup" timestamp="1586088599154">
+    <state x="322" y="89" width="719" height="678" key="search.everywhere.popup" timestamp="1587273129123">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state x="322" y="89" width="719" height="678" key="search.everywhere.popup/0.28.1366.740@0.28.1366.740" timestamp="1586088599154" />
+    <state x="322" y="89" width="719" height="678" key="search.everywhere.popup/0.28.1366.740@0.28.1366.740" timestamp="1587273129123" />
   </component>
 </project>
