@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23359487-774f-4697-bf25-e9a5b24c6d4f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lockinterface/Job.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lockinterface/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lockinterface/PrintQueue.java" afterDir="false" />
+    <list default="true" id="23359487-774f-4697-bf25-e9a5b24c6d4f" name="Default Changelist" comment="Reentrant lock done.">
+      <change afterPath="$PROJECT_DIR$/src/readwritelock/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/readwritelock/PriceInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/readwritelock/Reader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/readwritelock/Writer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +40,7 @@
       <recent name="$PROJECT_DIR$/data1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.Main (2)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lockinterface.Main" />
       <module name="java-concurrency" />
@@ -54,12 +54,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test4.Main" />
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="readwritelock.Main" />
       <module name="java-concurrency" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test4.*" />
+          <option name="PATTERN" value="readwritelock.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,11 +108,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (5)" />
         <item itemvalue="Application.Main (4)" />
-        <item itemvalue="Application.Main (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587571747427</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Reentrant lock done.">
+      <created>1587830997506</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1587830997506</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -179,37 +186,38 @@
     <MESSAGE value="test4 - loading resources.&#10;test5 - daemon thread." />
     <MESSAGE value="test-6 parking cost counter." />
     <MESSAGE value="Producer-Consumer example added." />
-    <option name="LAST_COMMIT_MESSAGE" value="Producer-Consumer example added." />
+    <MESSAGE value="Reentrant lock done." />
+    <option name="LAST_COMMIT_MESSAGE" value="Reentrant lock done." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="483" y="28" key="#com.intellij.ide.util.MemberChooser" timestamp="1587267483667">
+    <state x="482" y="28" key="#com.intellij.ide.util.MemberChooser" timestamp="1587873814936">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state x="483" y="28" key="#com.intellij.ide.util.MemberChooser/0.28.1366.740@0.28.1366.740" timestamp="1587267483667" />
+    <state x="482" y="28" key="#com.intellij.ide.util.MemberChooser/0.28.1366.740@0.28.1366.740" timestamp="1587873814936" />
     <state x="408" y="220" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1587273473959">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="408" y="220" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.28.1366.740@0.28.1366.740" timestamp="1587273473959" />
-    <state x="210" y="28" key="CommitChangelistDialog2" timestamp="1587571746983">
+    <state x="208" y="28" key="CommitChangelistDialog2" timestamp="1587832500812">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state x="210" y="28" key="CommitChangelistDialog2/0.28.1366.740@0.28.1366.740" timestamp="1587571746983" />
-    <state width="1318" height="348" key="GridCell.Tab.0.bottom" timestamp="1587830943546">
+    <state x="208" y="28" key="CommitChangelistDialog2/0.28.1366.740@0.28.1366.740" timestamp="1587832500812" />
+    <state width="1318" height="348" key="GridCell.Tab.0.bottom" timestamp="1587835526364">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1318" height="348" key="GridCell.Tab.0.bottom/0.28.1366.740@0.28.1366.740" timestamp="1587830943546" />
-    <state width="1318" height="348" key="GridCell.Tab.0.center" timestamp="1587830943545">
+    <state width="1318" height="348" key="GridCell.Tab.0.bottom/0.28.1366.740@0.28.1366.740" timestamp="1587835526364" />
+    <state width="1318" height="348" key="GridCell.Tab.0.center" timestamp="1587835526363">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1318" height="348" key="GridCell.Tab.0.center/0.28.1366.740@0.28.1366.740" timestamp="1587830943545" />
-    <state width="1318" height="348" key="GridCell.Tab.0.left" timestamp="1587830943544">
+    <state width="1318" height="348" key="GridCell.Tab.0.center/0.28.1366.740@0.28.1366.740" timestamp="1587835526363" />
+    <state width="1318" height="348" key="GridCell.Tab.0.left" timestamp="1587835526363">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1318" height="348" key="GridCell.Tab.0.left/0.28.1366.740@0.28.1366.740" timestamp="1587830943544" />
-    <state width="1318" height="348" key="GridCell.Tab.0.right" timestamp="1587830943546">
+    <state width="1318" height="348" key="GridCell.Tab.0.left/0.28.1366.740@0.28.1366.740" timestamp="1587835526363" />
+    <state width="1318" height="348" key="GridCell.Tab.0.right" timestamp="1587835526363">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state width="1318" height="348" key="GridCell.Tab.0.right/0.28.1366.740@0.28.1366.740" timestamp="1587830943546" />
+    <state width="1318" height="348" key="GridCell.Tab.0.right/0.28.1366.740@0.28.1366.740" timestamp="1587835526363" />
     <state x="218" y="102" key="IDE.errors.dialog" timestamp="1587265333286">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
@@ -226,9 +234,9 @@
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="347" y="176" key="run.anything.popup/0.28.1366.740@0.28.1366.740" timestamp="1586088714018" />
-    <state x="322" y="89" width="719" height="678" key="search.everywhere.popup" timestamp="1587489074044">
+    <state x="322" y="89" width="719" height="678" key="search.everywhere.popup" timestamp="1587873119720">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state x="322" y="89" width="719" height="678" key="search.everywhere.popup/0.28.1366.740@0.28.1366.740" timestamp="1587489074044" />
+    <state x="322" y="89" width="719" height="678" key="search.everywhere.popup/0.28.1366.740@0.28.1366.740" timestamp="1587873119720" />
   </component>
 </project>
